@@ -6,11 +6,11 @@
 
 def m_series(i):
     sums = 0.0
+    print ("i","   ","m(i)")
     for m in range(2, i+1):
         for k in range (2, m+1):
             sums = sums+float((k-1)/k)
-        print (m-1, sums)
+        print (m-1, " "*(4-len(str(m-1))), "{0:>.4f}".format(sums))
         sums=0.0
 
-i = int(input("Enter an integer: "))
-m_series(i)
+m_series(20)
