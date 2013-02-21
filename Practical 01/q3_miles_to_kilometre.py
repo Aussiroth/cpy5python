@@ -4,7 +4,6 @@
 #Date Modified: 21/1/2013
 #Description: Converts miles to kilometers
 
-miles = float(input("Input the number of miles"))
-area2=float(miles/1.60934)
-area="{0:<10.3f}".format(area2)
-print (area)
+miles = float(input("Input the number of miles\n"))
+area2=float(miles*1.60934)
+print ("{0:<.3f}".format(area2))
