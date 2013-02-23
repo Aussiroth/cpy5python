@@ -6,9 +6,10 @@
 
 def reverse_int(n):
     if n<10:
-        return str(n)
+        print (n)
     else:
-        return str(n%10)+reverse_int(n//10)
+        print (n%10, end="")
+        reverse_int(n//10)
 
 n = int(input("Enter an integer: "))
-print (reverse_int(n))
+reverse_int(n)
